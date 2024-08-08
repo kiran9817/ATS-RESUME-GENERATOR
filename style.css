@@ -1,5 +1,7 @@
+/* style.css */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -9,13 +11,32 @@ body {
     width: 80%;
     margin: 20px auto;
     background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #007BFF;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #007BFF;
+    margin-top: 40px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: url('icon.png'); /* Placeholder for your icon image */
+    margin-right: 10px;
 }
 
 form {
@@ -24,35 +45,63 @@ form {
 }
 
 label {
-    margin-top: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
 }
 
 input, textarea {
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0,123,255,0.3);
+    outline: none;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 30px;
+    padding: 15px;
     border: none;
-    background: #007BFF;
+    background: linear-gradient(to right, #007BFF, #0056b3);
     color: #fff;
-    font-size: 16px;
+    font-size: 1.2em;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background: #0056b3;
+    background: linear-gradient(to right, #0056b3, #003d7a);
 }
 
 .resume-output {
+    margin-top: 30px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+#downloadPdf {
     margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    font-size: 1.2em;
     border-radius: 5px;
-    background: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#downloadPdf:hover {
+    background: #218838;
 }
