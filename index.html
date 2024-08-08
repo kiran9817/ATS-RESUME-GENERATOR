@@ -24,6 +24,10 @@
             <label for="github">GitHub:</label>
             <input type="url" id="github" name="github">
 
+            <h2>Objective</h2>
+            <label for="objective">Objective:</label>
+            <textarea id="objective" name="objective" rows="3"></textarea>
+
             <h2>Education</h2>
             <label for="school">School:</label>
             <input type="text" id="school" name="school" required>
@@ -52,6 +56,14 @@
             <label for="project2desc">Project 2 Description:</label>
             <textarea id="project2desc" name="project2desc" rows="4"></textarea>
 
+            <h2>Honors & Awards</h2>
+            <label for="honors">Honors & Awards:</label>
+            <textarea id="honors" name="honors" rows="3"></textarea>
+
+            <h2>Hobbies</h2>
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" placeholder="Separate with commas">
+
             <h2>Skills</h2>
             <label for="skills">Skills:</label>
             <input type="text" id="skills" name="skills" placeholder="Separate with commas" required>
@@ -64,6 +76,7 @@
         </div>
         <button id="downloadPdf" style="display:none;">Download PDF</button>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
